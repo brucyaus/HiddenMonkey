@@ -7,9 +7,11 @@ CREATE TABLE video_list(
   PRIMARY KEY (video_id)
 );
 CREATE TABLE video_stats(
+  id INT AUTO_INCREMENT,
   video_id INT,
   video_views INT,
-  time_collected DATETIME,
+  time_collected DECIMAL(13,3),
+  PRIMARY KEY (id),
   FOREIGN KEY (video_id)
     REFERENCES video_list(video_id)
 );
