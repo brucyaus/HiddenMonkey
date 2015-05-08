@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import MySQLdb
 import pandas as pd
 import plotly.plotly as py
