@@ -13,7 +13,7 @@ rows = cursor.fetchall()
 data_frame = pd.DataFrame([[ij for ij in i] for i in rows])
 data_frame.rename(columns={0:"video_id",1:"video_views",2:"time_collected"})
 video_ids = data_frame[0]
-trace1 = Scatter(x=data_frame["time_collected"],y=data_frame["video_views"],text=data_frame,mode="markers")
+trace1 = Scatter(x=data_frame[2],y=data_frame[1],text=data_frame,mode="markers")
 layout = Layout(title="YouTube Views over time", xaxis=XAxis(title="Time"),yaxis=YAxis(title="Views"))
 data = Data([trace1])
 fig=Figure(data=data,layout=layout)
