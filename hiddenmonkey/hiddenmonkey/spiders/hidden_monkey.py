@@ -30,4 +30,3 @@ class HiddenMonkeySpider(scrapy.Spider):
         db_cur.execute(insert_sql+"VALUE( "+sub_query_for_id+" , " +view_count + " , '" + str(time.time()) + "')")
         db.commit()
         db.close()
-
