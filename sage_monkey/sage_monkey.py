@@ -24,9 +24,9 @@ def create_graph():
     rows = cursor.fetchall()
     data_frame = pd.DataFrame(columns={'views','time_collected'}, data=format_rows(rows))
     trace1 = Scatter(x=data_frame['views'], y=data_frame['time_collected'])
-    layout = Layout(title="YouTube Views over time", xaxis=XAxis(title="Time"), yaxis=YAxis(title="Views"))
+    #layout = Layout(title="YouTube Views over time", xaxis=XAxis(title="Time"), yaxis=YAxis(title="Views"))
     data = Data([trace1])
-    fig = Figure(data=data, layout=layout)
-    py.plot(fig, filename="Video_id 1")
+    #fig = Figure(data=data, layout=layout)
+    py.plot(data, filename="Video_id 1")
 
 create_graph()
