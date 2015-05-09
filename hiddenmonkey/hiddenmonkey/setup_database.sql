@@ -1,4 +1,4 @@
-DROP DATABASE hidden_monkey;
+DROP DATABASE IF EXISTS hidden_monkey;
 CREATE DATABASE hidden_monkey;
 USE hidden_monkey;
 CREATE TABLE video_list(
@@ -15,22 +15,22 @@ CREATE TABLE video_stats(
   FOREIGN KEY (video_id)
     REFERENCES video_list(video_id)
 );
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=k84FMc1GF8M');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=1b17ggwkR60');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=EU3d4PMBxkk');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=UBvVh_oG1O8');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=5-wXTJxQ350');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=0f1R265oU1A');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=urWQJTP8Nxc');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=qR4l1haDjvM');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=hxhpNHiBkeA');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=iopcfR1vI5I');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=1ISYT6EeUM0');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=ye8UpxnPzPE');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=O0wUwHIIg2A');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=tXmYdAm9Vjs');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=oPpYAFIYQBc');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=SobAPTAAX1s');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=2QxxD47NUaI');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=BrrgeZKvFEo');
-INSERT INTO video_list(video_url) value('https://www.youtube.com/watch?v=DWnA-yXUmJI');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=k84FMc1GF8M');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=1b17ggwkR60');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=EU3d4PMBxkk');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=UBvVh_oG1O8');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=5-wXTJxQ350');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=0f1R265oU1A');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=urWQJTP8Nxc');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=qR4l1haDjvM');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=hxhpNHiBkeA');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=iopcfR1vI5I');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=1ISYT6EeUM0');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=ye8UpxnPzPE');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=O0wUwHIIg2A');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=tXmYdAm9Vjs');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=oPpYAFIYQBc');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=SobAPTAAX1s');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=2QxxD47NUaI');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=BrrgeZKvFEo');
+INSERT INTO video_list(video_url) VALUES('https://www.youtube.com/watch?v=DWnA-yXUmJI');

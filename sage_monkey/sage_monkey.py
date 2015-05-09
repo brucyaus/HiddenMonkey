@@ -1,8 +1,6 @@
 #!/usr/bin/python
 import MySQLdb
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import plotly.plotly as py
 from plotly.graph_objs import *
 
