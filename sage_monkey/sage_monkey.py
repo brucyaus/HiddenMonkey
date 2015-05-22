@@ -31,7 +31,7 @@ def create_graph():
         # layout = Layout(title="YouTube Views over time", xaxis=XAxis(title="Time"), yaxis=YAxis(title="Views"))
         data = Data([trace1])
         #fig = Figure(data=data, layout=layout)
-        py.plot(data, filename="Video_id" + str(i) + str(time.time()))
+        py.plot(data, filename="v_id_" + str(i) +"_at_"+ str(time.time()))
 
 
 create_graph()
