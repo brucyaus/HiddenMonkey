@@ -20,7 +20,7 @@ def create_graph():
     cursor = db.cursor()
     sql = """ SELECT video_views,time_collected
                 FROM video_stats WHERE video_id ="""
-    sql_end = """ORDER BY time_collected ASC; """
+    sql_end = """ ORDER BY time_collected ASC; """
     full_sql = ""
     for i in range(1, 19):
         full_sql = sql + str(i) + sql_end
